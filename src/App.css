@@ -1,0 +1,229 @@
+/* 
+ * 수정 자유롭게 해주셔도 괜찮습니다 :)
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: #fff;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  padding: 8rem 10px 4rem;
+}
+
+.header-container {
+  padding: 20px 0px;
+  line-height: 1.5em;
+}
+
+.header-title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  color: #ececec;
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+  height: 44px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 13px;
+  gap: 8px;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+}
+
+/* .form-container.focused {
+    border: 1px solid #9f9f9f;
+  } */
+
+.form-container:hover {
+  border: 3px solid #dedede;
+}
+
+.input-container {
+  width: 100%;
+  height: 20px;
+}
+
+.search {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.input-text {
+  font-size: 14px;
+  font-weight: 400;
+  width: 90%;
+  vertical-align: top;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #9f9f9f;
+  background-color: transparent;
+}
+
+.input-submit {
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.input-text,
+.input-submit {
+  height: 20px;
+  outline: none;
+  border: none;
+}
+
+.btn-plus {
+  color: darkcyan;
+  font-size: 20px;
+}
+
+.btn-trash {
+  color: orangered;
+  font-size: 16px;
+}
+
+.btn-plus:hover,
+.btn-trash:hover {
+  opacity: 0.5;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 4px auto;
+  padding: 9px 5px;
+  width: 100%;
+  height: 164px;
+  border: 1px solid #dedede;
+  box-shadow: 0px 0px 1px rgba(50, 50, 50, 0.05), 0px 2px 4px rgba(50, 50, 50, 0.1);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.dropdown-text {
+  width: 100%;
+  height: 28px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.dropdown-text:hover {
+  background: #f2f2f2;
+  border-radius: 3px;
+}
+
+.dropdown-text:active {
+  background: #d5f4f1;
+  border-radius: 3px;
+}
+
+.highlighted {
+  color: #2bc9ba;
+}
+
+.active-link {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.main__content {
+  flex: 7;
+}
+
+.main__content h1 {
+  margin-bottom: 15px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.main__content p {
+  line-height: 25px;
+}
+
+.empty-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  letter-spacing: 1.5rem;
+  margin-left: 0.75rem;
+  color: #ececec;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.item {
+  list-style-type: none;
+  padding: 17px 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+.item:hover {
+  opacity: 0.85;
+  background-color: #eaeaea;
+}
+
+.item-option {
+  float: right;
+}
+
+.item-option button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.spinner {
+  font-size: 14px;
+  animation: spin 2s linear infinite;
+  display: flex;
+  align-self: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.textInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+}
